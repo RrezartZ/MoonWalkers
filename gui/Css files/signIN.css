@@ -1,0 +1,53 @@
+/* creates container (BB)*/
+.container {display: grid;
+				grid-template-columns: 3fr 3fr 3fr;
+				grid-template-rows: 20px 20px 20px;
+				grid-gap: 20px;
+				background-color: grey;}
+/* Styles tags containing "box1" class (BB)*/
+	.box1      {grid-row: span 1;
+				grid-column: span 2;
+				background-color: grey;}
+				#img{width: 9%;}
+				
+/* Styles tags containing "box1" class (BB)*/		
+	 a      {text-align: center;
+		     border: none;
+             color: Red;
+             font-size: 22px;
+			 }
+	
+/* Aligns text to right and changes background colour (BB)*/
+			#move {text-align: right;
+			background-color: grey;
+		     border: none;
+             color: Red;
+             display: inline-block;
+             font-size: 22px;
+			 border-radius: 15px 15px 15px 15px;}
+			 
+/* Aligns sign-in information to the right and changes bg colour (BB)*/
+	#signIN {text-align: right;
+			background-color: grey;
+		     border: none;
+             color: Red;
+             display: inline-block;
+             font-size: 22px;
+			 border-radius: 15px 15px 15px 15px;}
+			 
+/* when user hovers mouse the bg colour turns red (BB)*/
+    #signIN:hover {background-color: red;
+			color: Blue;}
+	body {background-color: black;
+		 color: white;
+		 inline:}
+		 
+/* these change the color of the text where the id's are used (BB)*/
+	#Name {color: white;}
+	#email {color: white;}
+	
+	#Gender {color: white;}
+	
+/* extends the gird */
+	#extend {grid-span: 2;}
+	

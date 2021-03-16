@@ -1,0 +1,77 @@
+/* styles the  background image so it doesn't repeat and the position is good (RZ)*/
+html
+ { background-repeat:no-repeat;
+			background-position:center center;
+			background-attachment:fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			}	
+/* creates container and divides it (RZ)*/
+	.container > div{}
+	.container {display: grid;
+				grid-template-columns: 3fr 3fr 3fr 3fr;
+				grid-template-rows: 20px 20px 20px 20px;
+				grid-gap: 10%;
+				background-color: red;}
+	/* box 1 where all the links to the other pages are	(RZ)*/
+	.box1      {grid-row: span 3;
+				grid-column: span 4;
+				border: 2px solid red;
+				background-color: black;}
+				#img{width: 9%;}
+				
+	/* aligns the text in center and changes the color of the text to red changes font size to 22px	(RZ) */
+	 a      {text-align: center;
+		     border: none;
+             color: Red;
+             font-size: 22px;
+			 }
+	
+			
+	
+	/* background-color black text colour white	(RZ)*/
+	body {background-color: black;
+		 color: white;
+		 }
+/* gives the buttons that link the pages together style shape changes the color of the text to white makes border color red(RZ) */
+	#Button	{border: 2px solid red;
+		     color: white;
+             padding: 15px 32px;
+             text-align: center;
+             text-decoration: none;
+             display: inline-block;
+             font-size: 16px;
+			 border-radius: 20px 20px 20px 20px;}
+			/* when the mouse is above the buttons with the button id change background-color to red and get box shadow (RZ)*/
+         #Button:hover {background-color: red;
+					box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
+	/* buttons for the games and tech and the buttons to remove items */
+	/* aligns text to center changes text color to white changes  font size (RZ) */
+	.button 	{
+	text-align: center;
+	width: 50%;
+	position: relative;
+	top: 1%;
+	left: 16%;
+	vertical-align: middle;
+	background-color: yellow
+	border: none;
+	color: red;
+	padding: 30px 48px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	border-radius: 12px;
+	border: 2px solid red;
+	color: white;
+	transition-duration: 0.4s;
+	}
+	 /* when the mouse is above the buttons with the button id change background-color to red and get box shadow (RZ) */
+	.button:hover {	background-color: red;
+					box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+					}	
+	/* centeres the buttons to middle	(RZ) */
+	button {center: middle;}	

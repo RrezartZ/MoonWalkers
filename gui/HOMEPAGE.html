@@ -1,0 +1,46 @@
+<!doctype html>
+<!-- opens the html tag - P.W. -->
+<html lang="en">
+<!-- opens the head tag - P.W. -->
+<head>
+	<meta charset="utf-8">
+	<!-- calls the font to the page - P.W. -->
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Css files/homeStyle.css">
+	<!-- creates the title for the page - P.W. -->
+	<title>Home Page</title>
+	
+<!-- closes the head tag - P.W. -->
+</head>
+
+<!-- opens the body tag - P.W. -->
+<body>
+
+<!-- makes the container - P.W. -->
+	<div class="container">
+<!-- nice big heading for Gaming tree - P.W. -->
+		<div id="space"><h1> Gaming Tree </h1></div>
+<!-- buttons that are linked to other pages - P.W. -->
+		<div id ="box1"><a class="button" href = "SHOP.html">Shop</a></div>
+		<div id="box2"><a class ="button" href = "CART.html">Cart</a></div>
+		<div id="box3"><a class="button" href = "SignInPage.html">Sign In</a> </div>
+	</div>
+<!-- closes the body tag - P.W. -->
+</body>
+
+<!-- closes the html tag - P.W. -->
+</html>
+<!-- opening script - P.W. -->
+<script type="text/javascript">
+<!-- chnages the background everytime you refreash the page - P.W. -->
+	var totalCount = 6;
+	function ChangeBackground()
+	{
+		var num = Math.ceil( Math.random() * totalCount );
+		document.body.parentNode.style.backgroundImage = 'url(background/test/'+num+'.jpg)';
+	}
+	ChangeBackground();
+<!-- closing script - P.W. -->
+</script>
+
+	

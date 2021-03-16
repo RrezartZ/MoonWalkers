@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- starts the file - P.W.-->
+<html>
+<!-- opens head tag - P.W. -->
+<head>
+<!-- UTF-8, makes your browser to use the UTF-8 character encoding, which is a method of converting your typed characters into machine-readable code - P.W. -->
+<meta charset="UTF-8">
+	<!-- the title of the page (BB) -->
+	<title>SHOP Tech</title>
+	<!-- link to the style sheet which gives the page style (BB)-->
+	<link rel="stylesheet" type="text/css" href="Css files/Shop.css">
+</head>
+<body>
+	<!-- this divides the container(BB) -->
+	<div class="container">
+	<!-- this divides the space(BB) -->
+	<div id="space">
+	<!-- links to the other pages(BB) -->
+	<a href="HOMEPAGE.html" id="links">HOME</a>
+	<a href="SHOP.html" id="links"> SHOP</a>
+    <a href="CART.html"><img src="basket.png" alt="Cart" class="right" ></a>	
+	</div>
+	<!-- Used to display images saved in a file. functions activate when the user clicks on a button (BB) -->
+	<div><img id="adjust" src="Tech/Razer.png" alt="Razer"><a class="button" onclick="Razer()">Razer - €149.99</a></div>
+	<div><img id="adjust" src="Tech/ps4Pro.jpg" alt="PS4 Pro"><a class="button" onclick="PS4Pro()">PS4 Pro - €399.99</a></div>
+	<div><img id="adjust" src="Tech/xboxone.jpg" alt="xboxone"><a class="button" onclick="xboxone()">xboxone - €339.99</a></div>
+	<div><img id="adjust" src="Tech/ps4.jpg" alt="ps4.png"> <a class="button" onclick="Ps4()">Ps4- €339.99</a></div>
+	
+	<div><img id="adjust" src="Tech/samsung.jpg" alt="samsung watch.jpg" > <a class="button" onclick="samsungWatch()">Samsung watch - €99.99</a> </div>
+	<div><img id="adjust" src="Tech/cowin E7 PRO.jpg" alt="cownE7"><a class="button" onclick="cowinE7PRO()"> cowin E7 PRO - €199.99</a></div>
+	<div><img id="adjust" src="Tech/Sony WH-1000XM3.jpg" alt="Sony WH-1000XM3.jpg"><a class="button" onclick="SonyWH1000XM3()"> Sony WH-1000XM3 - €149.99</a></div>
+	<div><img id="adjust" src="Tech/BoseNoiseCancelingHeadphone700.jpg" alt="Bose Headphones"><a class="button" onclick="BoseNoiseCancelingHeadphone700()">BoseNoiseCancelingHeadphone700 - €199.99</a></div>
+
+	</div>
+</body>	
+</html>
+		<!-- starts the java script tag (RZ) -->
+		<script>
+	<!-- lets the user input the item wanted if it is more than 1 it is stored in sessionStorage if it is less than 1 or not a number alerts wrong input (RZ) -->
+	function Razer()
+		{
+		let razerQTY = prompt("Enter Qty");
+		if (razerQTY>=1){
+		sessionStorage.setItem("razer",razerQTY);
+		sessionStorage.getItem(razerQTY);
+		}else {
+			alert("Wrong Input");
+		}
+		}
+		<!-- lets the user input the item wanted if it is more than 1 it is stored in sessionStorage if it is less than 1 or not a number alerts wrong input (RZ) -->
+		function PS4Pro()
+		{
+		let PS4ProQTY = prompt("Enter Qty");
+		if (PS4ProQTY>=1){
+		sessionStorage.setItem("PS4Pro",PS4ProQTY);
+		sessionStorage.getItem(PS4ProQTY);
+		}else {
+			alert("Wrong Input");
+		}
+		}
+		<!-- lets the user input the item wanted if it is more than 1 it is stored in sessionStorage if it is less than 1 or not a number alerts wrong input (RZ) -->
+		function xboxone()
+		{
+		let xboxoneQTY = prompt("Enter Qty");
+		if (xboxoneQTY>=1){
+		sessionStorage.setItem("xboxone",xboxoneQTY);
+		sessionStorage.getItem(xboxoneQTY);
+		}else {
+			alert("Wrong Input");
+		}
+		}
+		<!-- lets the user input the item wanted if it is more than 1 it is stored in sessionStorage if it is less than 1 or not a number alerts wrong input (RZ) -->
+		function Ps4()
+		{
+		let Ps4QTY = prompt("Enter Qty");
+		if (Ps4QTY>=1){
+		sessionStorage.setItem("PS4",Ps4QTY);
+		sessionStorage.getItem(Ps4QTY);
+		}else {
+			alert("Wrong Input");
+		}
+		}
+		<!-- lets the user input the item wanted if it is more than 1 it is stored in sessionStorage if it is less than 1 or not a number alerts wrong input (RZ) -->
+		function samsungWatch()
+		{
+		let samsungWatchQTY = prompt("Enter Qty");
+		if (samsungWatchQTY>=1){
+		sessionStorage.setItem("Samsung Watch",samsungWatchQTY);
+		sessionStorage.getItem(samsungWatchQTY);
+		}else {
+			alert("Wrong Input");
+		}
+		}
+		<!-- lets the user input the item wanted if it is more than 1 it is stored in sessionStorage if it is less than 1 or not a number alerts wrong input (RZ) -->
+		function cowinE7PRO()
+		{
+		let cowinE7PROQTY = prompt("Enter Qty");
+		if (cowinE7PROQTY>=1){
+		sessionStorage.setItem("Cowin E7 PRO",cowinE7PROQTY);
+		sessionStorage.getItem(cowinE7PROQTY);
+		}else {
+			alert("Wrong Input");
+		}
+		}
+		<!-- lets the user input the item wanted if it is more than 1 it is stored in sessionStorage if it is less than 1 or not a number alerts wrong input (RZ) -->
+		function SonyWH1000XM3()
+		{
+		let SonyWH1000XM3QTY = prompt("Enter Qty");
+		if (SonyWH1000XM3QTY>=1){
+		sessionStorage.setItem("SonyWH1000XM3",SonyWH1000XM3QTY);
+		sessionStorage.getItem(SonyWH1000XM3QTY);
+		}else {
+			alert("Wrong Input");
+		}
+		}
+		<!-- lets the user input the item wanted if it is more than 1 it is stored in sessionStorage if it is less than 1 or not a number alerts wrong input (RZ) -->
+		function BoseNoiseCancelingHeadphone700()
+		{
+		let BoseNoiseCancelingHeadphone700QTY = prompt("Enter Qty");
+		if (BoseNoiseCancelingHeadphone700QTY>=1){
+		sessionStorage.setItem("Bose Noise Canceling Headphone700",BoseNoiseCancelingHeadphone700QTY);
+		sessionStorage.getItem(BoseNoiseCancelingHeadphone700QTY);
+		}else {
+			alert("Wrong Input");
+		}
+		}
+		
+		
+		</script>

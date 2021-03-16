@@ -1,0 +1,152 @@
+<!-- Starts the html file (Rz)-->
+<!doctype html>
+<!-- This code makes the langueage to english (Rz) and starts the html tag-->
+<html lang="en">
+<!-- Opens the head tag (Rz) -->
+<head>
+    <!-- UTF-8, makes your browser to use the UTF-8 character encoding, which is a method of converting your typed characters into machine-readable code (Rz) -->
+	<meta charset="UTF-8">
+	<!-- This is the title of the page -->
+	<title>Sign In page</title>
+	<!-- This code links this file with the CSS file making it so you can style your page from a different file (Rz) -->
+<link rel="stylesheet" type="text/css" href="Css files/signIN.css">
+<!-- Closes the head tag (Rz)-->
+	</head>
+<!-- Start the body tag	(Rz)-->
+<body>
+	<!-- creates the container (Rz) -->
+	<div class="container">	
+	<!-- divides the page and shows the picture (Rz) -->
+	<div class="box1"><p><img id="img" src="gamingTree.jpg"></div>
+	<!-- aligns the text right (Rz) -->
+	<a id="move"></a>
+	<!-- divides the page again and extends the grid span to 2 (Rz) -->
+	<div id="extend">	 
+	<!-- line break (Rz) -->
+	 <br>
+	<!-- line break (Rz) -->
+	 <br>
+	 <!-- creates button to press which sends you to the home page (Rz) -->
+	 <a href="HOMEPAGE.html">HOME</a>
+ 	 <!-- creates button to press which sends you to the shop page (Rz) -->
+	 <a href="SHOP.html">SHOP</a>	
+	 <!-- creates button to press which sends you to the cart page (Rz)-->
+	 <a href="CART.html">CART</a>
+	<!-- line break -->
+	 <br>
+	<form name="RegForm" onsubmit="return Donald()" method="post">
+	<!-- creates a place where you can enter name (Rz)-->
+	<p id="Name">Enter Name: <input type="text" id="name" name="Name">
+	<!-- when this button is clicked it saves the input into local memory (Rz)-->
+		</p>
+	<!-- creates a place where you can enter email (Rz) -->	
+	<p id="email">Enter E-Mail: <input type="email" id="Email" placeholder="Enter an email" name="EMail">
+		<!-- when this button is clicked it saves the input into local memory (Rz) -->
+		</p>
+	<!-- creates a place where you can enter username (Rz) -->	
+	<p id="UserName">Enter UserName: <input type="text" id="username" name="UserName">
+		<!-- when this button is clicked it saves the input into local memory (Rz) -->
+	</p>
+	<!-- creates a place where you can enter password (Rz) -->	
+	<p id="Password">Enter password: <input type="password" id="password" name="Password" minlength="6">
+		<!-- when this button is clicked it saves the input into local memory (Rz)-->
+		</p>
+	<!-- creates a place where you can enter gender (Rz) -->	
+	<p id="Gender">Enter Gender: <input type="text" id="gender" name="Gender"> 
+		<!-- when this button is clicked it saves the input into local memory -->
+		</p>
+		 <p><input type="submit" value="send" name="Submit" onclick="send()" >      
+           
+    </p>         
+	</form><input type="reset" value="Reset" name="Reset" onclick="reset()" >
+	</div>
+<!-- Closes the body tag -->		
+</body>
+<!-- Closes the html tag -->	
+</html>
+<!-- opens the script tag -->
+<script>
+    <!-- creates the variables needed for the input -->
+	var Name = document.forms["RegForm"]["Name"];               
+    var email = document.forms["RegForm"]["EMail"];   
+	var userName = document.forms["RegForm"]["UserName"];
+    var password = document.forms["RegForm"]["Password"];  
+    var gender = document.forms["RegForm"]["Gender"];  
+    <!-- form validation creates an alert if the input place are empty (RZ) -->
+	function Donald()
+	{ 
+   
+    if (Name.value == "")                                  
+    { 
+        window.alert("Please enter your name."); 
+        Name.focus(); 
+        return false; 
+    }
+	else
+	{
+	 document.getElementById("name");
+	 localStorage.setItem("name",Name.value);
+	 }
+	
+	if (email.value == "")
+	{
+		window.alert("Please enter your email.");
+		email.focus();
+		return false;
+	}
+	else
+	{
+	document.getElementById("Email");
+	 localStorage.setItem("Email",email.value);
+	}
+	
+	if (userName.value == "")
+	{
+		window.alert("Please enter your user name.");
+		userName.focus();
+		return false;
+	}
+	else
+	{
+	document.getElementById("username");
+	 localStorage.setItem("username",userName.value);
+	}
+	
+	if (password.value == "")
+	{
+		window.alert("Please enter your password.");
+		password.focus();
+		return false;
+	}
+	else
+	{
+	document.getElementById("password");
+	localStorage.setItem("password",password.value);
+	}
+	
+	if (gender.value == "")
+	{
+		window.alert("Please fill out your gender.");
+		password.focus();
+		return false;
+	}
+	else
+	{
+	document.getElementById(gender);
+	 localStorage.setItem("gender",gender.value);
+	}
+	
+	return true;
+	}
+	<!-- creates the button send when pressed sends all the inputs to local memory (RZ)-->
+	function send()
+	{
+	
+	}
+	<!-- when reset is pressed the user gets rid of the login details and can change them if wanted (RZ) -->
+	function reset()
+	{
+	localStorage.clear();
+	}
+<!-- Closes the script tag -->					
+</script>

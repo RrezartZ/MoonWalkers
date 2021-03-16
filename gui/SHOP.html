@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- specifies the character set the website is written with (BB) -->
+<meta charset="UTF-8">
+	<title>SHOP Games</title>
+	<!-- link to style sheet which gives style to the page (BB) -->
+	<link rel="stylesheet" type="text/css" href="Css files/Shop.css">
+</head>
+<body>
+<!-- css from Style.css stylesheet (BB)-->
+	<div class="container">
+	<div id="space">
+	<!-- links to other pages (BB) -->
+	<a href="HOMEPAGE.html" id="links">HOME</a>
+	<a href="Shop Tech.html" id="links"> SHOP Tech</a>
+    <a href="CART.html"><img src="basket.png" alt="Cart" class="right" ></a>	
+	</div>
+	<!-- Used to display images saved in a file. functions activate when the user clicks on a button (BB) -->
+	<div><img id="adjust" src="Games/AssassinCreedOdyssy.png" alt="AssassinCreedOdyssy.png" > <a class="button" onclick="Creed()" >AssassinCreedOdyssy - €79.99</a> </div>
+	<div><img id="adjust" src="Games/Bloodborne.jpg" alt="Bloodborne.jpg"> <a class="button" onclick="Bloodborne()">Bloodborne - €59.99</a></div>
+	<div><img id="adjust" src="Games/DB FighterZ.jpg" alt="DB FighterZ.jpg"><a class="button" onclick="FighterZ()" > DB FighterZ - €69.99</a></div>
+	<div><img id="adjust" src="Games/DBZ XenoverseXV.jpg" alt="DBZ Xeno"><a class="button" onclick="Xenoverse()" > DBZ XenoverseXV - €49.99</a></div>
+	
+	<div><img id="adjust" src="Games/FarCryNewDawn.jpg" alt="FarCry"><a class="button" onclick="FarCryNewDawn()" > FarCryNewDawn - €69.99</a></div>
+	<div><img id="adjust" src="Games/FarCryNewDawnXBOX.jpg" alt="FarCryXbox"><a class="button" onclick="FarCryXBOX()">FarCryNewDawnXBOX - €69.99</a></div>
+	<div><img id="adjust" src="Games/Horizon-Zero-Dawn.jpg" alt="Horizon-Zero-Dawn"><a class="button" onclick="HorizonZeroDawn()">Horizon-Zero-Dawn - €69.99</a></div>
+	<div><img id="adjust" src="Games/ForHonor.jpg" alt="ForHonor"><a class="button" onclick="ForHonor()">ForHonor - €49.99</a></div>
+	
+	</div>
+</body>	
+</html>
+<script>
+<!-- Each function prompts the user to enter a value, the value is then saved and stored in the browser (BB) -->
+	function Creed()
+		{
+		let creedQty = prompt("Enter Qty");
+		if (creedQty>=1){
+		sessionStorage.setItem("creed",creedQty);
+		sessionStorage.getItem(creedQty);
+		}else {
+	    alert("wrong input");
+		}
+		}
+		
+		function Bloodborne()
+		{
+		let BloodborneQty = prompt("Enter Qty");
+		if (BloodborneQty>=1){
+		sessionStorage.setItem("Bloodborne",BloodborneQty);
+		sessionStorage.getItem(BloodborneQty);
+		 
+		}else {
+			alert("wrong input");
+			
+		}
+		
+		}
+		
+		function FighterZ()
+		{
+		let FighterZQty = prompt("Enter Qty");
+		if (FighterZQty>=1){
+		sessionStorage.setItem("FighterZ",FighterZQty);
+		sessionStorage.getItem(FighterZQty);
+		}else {
+			alert("wrong input");
+		}
+		}
+		
+		function Xenoverse()
+		{
+		let XenoverseQty = prompt("Enter Qty");
+		if (XenoverseQty>=1){
+		sessionStorage.setItem("Xenoverse",XenoverseQty);
+		sessionStorage.getItem(XenoverseQty);
+		}else {
+			alert("wrong input");
+		}
+		}
+		
+		function FarCryNewDawn()
+		{
+		let FarCryNewDawnQty = prompt("Enter Qty");
+		if (FarCryNewDawnQty>=1){
+		sessionStorage.setItem("FarCryNewDawn",FarCryNewDawnQty);
+		sessionStorage.getItem(FarCryNewDawnQty);
+		}else {
+			alert("wrong input");
+		}
+		
+		}
+		
+		function FarCryXBOX()
+		{
+		let FarCryXBOXQty = prompt("Enter Qty");
+		if (FarCryXBOXQty>=1){
+		sessionStorage.setItem("FarCryXBOX",FarCryXBOXQty);
+		sessionStorage.getItem(FarCryXBOXQty);
+		 
+		}else {
+			alert("wrong input");
+		}
+		}
+		
+		function HorizonZeroDawn()
+		{
+		let HorizonZeroDawnQty = prompt("Enter Qty");
+		if (HorizonZeroDawnQty>=1){
+		sessionStorage.setItem("Horizon Zero Dawn",HorizonZeroDawnQty);
+		sessionStorage.getItem(HorizonZeroDawnQty);
+		 
+		}else {
+			alert("wrong input");
+		}
+		}
+			
+		function ForHonor()
+		{
+		let ForHonorQty = prompt("Enter Qty");
+		if (ForHonorQty>=1){
+		sessionStorage.setItem("ForHonor",ForHonorQty);
+		sessionStorage.getItem(ForHonorQty);
+		 
+		}else {
+			alert("wrong input");
+		}
+		}
+		
+		
+		
+		
+		
+
+	
+		
+	</script>
